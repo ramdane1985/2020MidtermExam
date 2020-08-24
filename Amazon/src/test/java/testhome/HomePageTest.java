@@ -5,13 +5,16 @@ import home.HomePage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import signUp.RegistrationPage;
 
 public class HomePageTest extends WebAPI {
     HomePage homePage;
+    RegistrationPage registrationPage;
 
     @BeforeMethod
     public void getInit() {
         homePage = PageFactory.initElements(driver,HomePage.class);
+        registrationPage = PageFactory.initElements(driver,RegistrationPage.class);
     }
 
 

@@ -12,6 +12,7 @@
         <module>Amazon</module>
         <module>CNN</module>
         <module>Generic</module>
+        <module>eBay</module>
     </modules>
 
     <properties>

@@ -5,10 +5,10 @@
 <suite name="Amazon Automation Test" parallel="false">
 <parameter name="url" value="https://www.amazon.com/"/>
 
-
     <test name="Amazon Home">
         <classes>
             <class name="testhome.HomePageTest"></class>
+            <class name="testhome.RegistrationPageTest"></class>
         </classes>
     </test>
 
