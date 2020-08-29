@@ -12,6 +12,7 @@ import org.testng.Assert;
 import static home.HomePageWebElements.*;
 
 public class HomePage extends WebAPI {
+    String expectedResult;
 
     // Action Class: All the action methods and Validate methods
 
@@ -43,9 +44,9 @@ public class HomePage extends WebAPI {
     }
 
     // Validate Method
-    public void validateSearchText(){
+    public void validateSearchText(String expectedResult){
         String actualResult=searchText.getText();
-        String expectedResult="\"Hand Sanitizer\"";
+       // String expectedResult="\"Hand Sanitizer\"";
         Assert.assertEquals(actualResult,expectedResult,"Search Item not match");
     }
 

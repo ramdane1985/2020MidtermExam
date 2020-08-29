@@ -11,5 +11,13 @@
 
     <artifactId>eBay</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.qaautomationlab</groupId>
+            <artifactId>Generic</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

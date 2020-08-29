@@ -11,18 +11,27 @@ public class HomePageTest extends WebAPI {
     HomePage homePage;
     RegistrationPage registrationPage;
 
+
     @BeforeMethod
     public void getInit() {
         homePage = PageFactory.initElements(driver,HomePage.class);
         registrationPage = PageFactory.initElements(driver,RegistrationPage.class);
+
     }
 
 
     @Test
     public void testSearchBoxCheck() {
         homePage.searchBoxCheck("Hand Sanitizer");
-        homePage.validateSearchText();
+        homePage.validateSearchText("\"Hand Sanitizer\"");
     }
+
+    @Test(enabled = true)
+    public void testSearchBoxCheck1() {
+        homePage.searchBoxCheck("Hand Sanitizer");
+        homePage.validateSearchText("\"Hand Sanitizer1\"");
+    }
+
 
 
 }
