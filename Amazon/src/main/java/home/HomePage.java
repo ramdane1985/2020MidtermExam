@@ -50,6 +50,11 @@ public class HomePage extends WebAPI {
         Assert.assertEquals(actualResult,expectedResult,"Search Item not match");
     }
 
+    public void login(){
+        clickOnElement(webElementSearchBox);
+        typeOnElement(webElementSearchBox,"I phone 11 pro max");
+
+    }
 
 
 
