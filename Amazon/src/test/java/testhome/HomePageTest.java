@@ -15,8 +15,8 @@ public class HomePageTest extends WebAPI {
 
     @BeforeMethod
     public void getInit() {
-        homePage = PageFactory.initElements(driver,HomePage.class);
-        registrationPage = PageFactory.initElements(driver,RegistrationPage.class);
+        homePage = PageFactory.initElements(driver, HomePage.class);
+        registrationPage = PageFactory.initElements(driver, RegistrationPage.class);
 
     }
 
@@ -37,6 +37,27 @@ public class HomePageTest extends WebAPI {
         homePage.validateSearchText("\"Hand Sanitizer1\"");
     }
 
+    @Test
+    public void testSearchBoxCheckUsingGetItemValue() throws InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        homePage.searchBoxCheckUsingGetItemValue();
+        //homePage.validateSearchBoxCheckUsingGetItemValue();
+    }
+
+    @Test
+    public void testSearchBoxCheckGetItemsListFromExcel() throws Exception {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        homePage.searchBoxCheckGetItemsListFromExcel();
+    }
+
+    @Test
+    public void testSearchBoxCheckGetItemsListFromDB() throws Exception {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        homePage.searchBoxCheckGetItemsListFromDB();
+    }
 
 
 }

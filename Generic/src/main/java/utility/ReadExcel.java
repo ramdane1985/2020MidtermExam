@@ -20,9 +20,9 @@ public class ReadExcel {
      *
      *
      */
-    public static void readExcelFile() {
+    public static void readExcelFile(String fileName) {
         try {
-            FileInputStream inputStream = new FileInputStream(new File(FILE_NAME));
+            FileInputStream inputStream = new FileInputStream(new File(fileName));
             Workbook workbook = new XSSFWorkbook(inputStream);
             Sheet dataTypeSheet = workbook.getSheetAt(0);
             Iterator<Row> rowIterator = dataTypeSheet.iterator();
