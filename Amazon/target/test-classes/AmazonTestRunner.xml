@@ -8,26 +8,26 @@
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <!--<parameter name="cloudEnvName" value="saucelab"/>-->
-    <parameter name="os" value="windows"/>
-    <!-- <parameter name="os" value="OS X"/>-->
-    <parameter name="os_version" value="10"/>
-    <!--    <parameter name="os_version" value="Sierra"/>-->
-    <!--    <parameter name="browserName" value="chrome"/>-->
-    <!--    <parameter name="browserVersion" value="84"/>-->
+<!--    <parameter name="os" value="windows"/>-->
+     <parameter name="os" value="OS X"/>
+<!--    <parameter name="os_version" value="10"/>-->
+        <parameter name="os_version" value="catalina"/>
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value="85"/>
     <parameter name="url" value="https://www.amazon.com"/>
 
     <test name="Amazon Home">
         <parameter name="browserName" value="chrome"/>
-        <parameter name="browserVersion" value="84"/>
+        <parameter name="browserVersion" value="85"/>
         <classes>
             <class name="testhome.HomePageTest">
                 <methods>
                     <exclude name="testSearchBoxCheck"></exclude>
                     <exclude name="testSearchBoxCheck1"></exclude>
-<!--                    <exclude name="testSearchBoxCheckUsingGetItemValue"></exclude>-->
-<!--                    <exclude name="testSearchBoxCheckGetItemsListFromExcel"></exclude>-->
+                    <exclude name="testSearchBoxCheckUsingGetItemValue"></exclude>
+                    <exclude name="testSearchBoxCheckGetItemsListFromExcel"></exclude>
 <!--                    <exclude name="testSearchBoxCheckGetItemsListFromDB"></exclude>-->
-<!--                    <include name="testSearchBoxCheckGetItemsListFromExcel"></include>-->
+                    <include name="testSearchBoxCheckGetItemsListFromExcel"></include>
                 </methods>
             </class>
 

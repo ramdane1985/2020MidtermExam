@@ -1,4 +1,0 @@
-# Created at 2020-08-29T16:44:27.328
-Boot Manifest-JAR contains absolute paths in classpath 'G:\SOFTWARE ENGINEERING\PROJECTS\IdeaProjects\PNT\LearnWebAutomationFramework_WeekendAfternoon_Selenium_NY_Summer2020\Amazon\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-

@@ -30,6 +30,9 @@ public class HomePage extends WebAPI {
 
     @FindBy(how = How.XPATH, using = webElementSearchText)
     public WebElement searchText;
+    @FindBy(how = How.XPATH,using = getWebElementSearchBox1)
+    public WebElement getSearchBox1;
+
 
 //    @FindBy(css=webElementSearchBox)
 //    private WebElement searchBox1;

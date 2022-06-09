@@ -1,4 +1,6 @@
-home\HomePage.class
-home\HomePageWebElements.class
-signUp\RegistrationPage.class
-signUp\RegistrationPageWebElements.class
+datadriven/DataSource.class
+home/HomePageWebElements.class
+home/Demo.class
+home/HomePage.class
+signUp/RegistrationPageWebElements.class
+signUp/RegistrationPage.class
